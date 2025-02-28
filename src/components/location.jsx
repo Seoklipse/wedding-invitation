@@ -40,10 +40,31 @@ const Map = styled.div`
   padding: 0;
 `;
 
+const BusItem = styled.span`
+  display: block;
+  margin-bottom: 8px;
+  color: ${({ busType }) =>
+    busType === "간선" ? "blue" :
+    busType === "지선" ? "green" :
+    busType === "직행" ? "orange" :
+    busType === "공항" ? "red" :
+    busType === "마을" ? "purple" :
+    "black"};
+`;
+
+const SubwayLine = styled.span`
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 4px;
+  color: white;
+  background-color: ${({ line }) =>
+    line === "2호선" ? "#33A23D" : // 2호선 (초록색)
+    line === "7호선" ? "#6D8EB5" : // 7호선 (올리브색)
+    "black"};
+`;
+
 const Location = () => {
   // 카카오 맵 불러오기
-
-  // <!-- 3. 실행 스크립트 -->
   const executeScript = () => {
     const scriptTag = document.createElement("script");
     const inlineScript = document.createTextNode(`new daum.roughmap.Lander({
@@ -56,8 +77,6 @@ const Location = () => {
     document.body.appendChild(scriptTag);
   };
 
-  // <!-- 2. 설치 스크립트 * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다. -->
-  // document.write 문제가 발생해서 해당 파일을 직접 가져온다음 수정했음
   const InstallScript = () => {
     (function () {
       let c = window.location.protocol === "https:" ? "https:" : "http:";
@@ -78,7 +97,6 @@ const Location = () => {
         a +
         "/roughmapLander.js";
 
-      // document.write -> doumnet.body.append로 수정
       const scriptTag = document.createElement("script");
       scriptTag.src = b;
       document.body.append(scriptTag);
@@ -90,7 +108,7 @@ const Location = () => {
 
   useEffect(() => {
     InstallScript();
-  }, [InstallScript]);
+  }, []);
 
   return (
     <Wrapper>
@@ -103,23 +121,32 @@ const Location = () => {
         className="root_daum_roughmap root_daum_roughmap_landing"
       ></Map>
       <Content>
-        대구 수성구 두산동 888-2번지
+        <b>서울특별시 광진구 능동로 87
         <br />
-        호텔수성 수성스퀘어 3층 피오니홀
+        건대입구역 자이엘라 6F 에떼르노 홀</b>
         <br />
         <br />
         <Title>버스 이용시</Title>
         <br />
         <br />
-        410-1, 401 호텔수성 앞 하차
-        <br />
-        수성1-1, 수성3-1, 814 TBC방송국 앞 하차
-        <br />
+        <BusItem busType="간선">건대로데오거리입구 정류장 하차[05218] 간선버스 240, 721</BusItem>
+        <BusItem busType="지선">지선버스 2222, 2224</BusItem>
+        <BusItem busType="직행">직행버스 3500</BusItem>
+        <BusItem busType="공항">공항버스 6013</BusItem>
+        <BusItem busType="마을">마을버스 광진05</BusItem>
         <br />
         <Title>지하철 이용시</Title>
         <br />
         <br />
-        3호선 수성못역 하차 (도보 10분)
+        <SubwayLine line="2호선">2호선</SubwayLine>, <SubwayLine line="7호선">7호선</SubwayLine> 건대입구역 5번 출구 바로 앞 (도보 30m)
+        <br />
+        <br />
+        <Title>자가용 이용시</Title>
+        <br />
+        <br />
+        네비게이션: "까사그랑데" 또는 "건대입구역 자이엘라" 입력
+        <br />
+        주소검색 : "서울 광진구 능동로 87" 또는 "서울 광진구 자양동 2-2" 검색
       </Content>
     </Wrapper>
   );
