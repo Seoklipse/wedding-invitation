@@ -5,7 +5,7 @@
 
 ## 👰🏻‍♀️ 미리 보기
 
-https://wedding-templete.netlify.app/
+https://Seoklipse.github.io/wedding-invitation/
 
 ## 📚 내용 및 기능
 
