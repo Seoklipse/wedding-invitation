@@ -41,9 +41,11 @@ const Map = styled.div`
 `;
 
 const BusItem = styled.span`
-  display: block;
-  margin-bottom: 8px;
-  color: ${({ busType }) =>
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 4px;
+  color: white;
+  background-color: ${({ busType }) =>
     busType === "간선" ? "blue" :
     busType === "지선" ? "green" :
     busType === "직행" ? "orange" :
@@ -68,8 +70,8 @@ const Location = () => {
   const executeScript = () => {
     const scriptTag = document.createElement("script");
     const inlineScript = document.createTextNode(`new daum.roughmap.Lander({
-    "timestamp" : "1652464367301",
-    "key" : "2a8fe",
+    "timestamp" : "1740736481162",
+    "key" : "2n7n8",
     "mapWidth" : "640",
     "mapHeight" : "360"
   }).render();`);
@@ -116,8 +118,9 @@ const Location = () => {
         <Title>오시는 길</Title>
       </Divider>
       <Image src={Flower} />
+      
       <Map
-        id="daumRoughmapContainer1652464367301"
+        id="daumRoughmapContainer1740736481162"
         className="root_daum_roughmap root_daum_roughmap_landing"
       ></Map>
       <Content>
@@ -129,11 +132,13 @@ const Location = () => {
         <Title>버스 이용시</Title>
         <br />
         <br />
-        <BusItem busType="간선">건대로데오거리입구 정류장 하차[05218] 간선버스 240, 721</BusItem>
-        <BusItem busType="지선">지선버스 2222, 2224</BusItem>
-        <BusItem busType="직행">직행버스 3500</BusItem>
-        <BusItem busType="공항">공항버스 6013</BusItem>
-        <BusItem busType="마을">마을버스 광진05</BusItem>
+        <b>건대로데오거리입구 정류장 하차 </b>[05218]
+        <br />
+        <BusItem busType="간선">간선버스</BusItem> 240, 721<br />
+        <BusItem busType="지선">지선버스</BusItem> 2222, 2224<br />
+        <BusItem busType="직행">직행버스</BusItem> 3500<br />
+        <BusItem busType="공항">공항버스</BusItem> 6013<br />
+        <BusItem busType="마을">마을버스</BusItem> 광진05
         <br />
         <Title>지하철 이용시</Title>
         <br />
