@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import ImageGallery from "react-image-gallery";
 import { Divider } from "antd";
 import styled from "styled-components";
@@ -10,6 +10,7 @@ import GalleryPhoto4 from "../assets/Gallery_Photo_4.webp";
 import GalleryPhoto5 from "../assets/Gallery_Photo_5.webp";
 import GalleryPhoto6 from "../assets/Gallery_Photo_6.webp";
 import GalleryPhoto7 from "../assets/Gallery_Photo_7.webp";
+import GalleryPhoto7a from "../assets/Gallery_Photo_7-1.webp";
 import GalleryPhoto8 from "../assets/Gallery_Photo_8.webp";
 import GalleryPhoto9 from "../assets/Gallery_Photo_9.webp";
 import GalleryPhoto10 from "../assets/Gallery_Photo_10.webp";
@@ -94,6 +95,10 @@ const images = [
   {
     original: GalleryPhoto7,
     thumbnail: GalleryPhoto7,
+  },
+  {
+    original: GalleryPhoto7a,
+    thumbnail: GalleryPhoto7a,
   },
   {
     original: GalleryPhoto8,
@@ -258,6 +263,17 @@ const images = [
 ];
 
 const Gallery = () => {
+  useEffect(() => {
+    document.addEventListener("contextmenu", (e) => e.preventDefault()); // 우클릭 방지
+    document.addEventListener("dragstart", (e) => e.preventDefault()); // 드래그 방지
+
+    return () => {
+      document.removeEventListener("contextmenu", (e) => e.preventDefault());
+      document.removeEventListener("dragstart", (e) => e.preventDefault());
+    };
+  }, []);
+
+
   return (
     <Wrapper>
       <Divider style={{ marginTop: 0, marginBottom: 32 }} plain>

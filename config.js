@@ -1,7 +1,7 @@
 export const WEDDING_INVITATION_URL = "http://seoklipse.github.io/wedding-invitation/";
-export const KAKAOTALK_API_TOKEN = "e65c0baa105b400f86678720c4088af0";
+export const KAKAOTALK_API_TOKEN = "d65a8fb7ac4b7f92db8e810865a852f6";
 export const KAKAOTALK_SHARE_IMAGE =
-  "https://cdn.pixabay.com/photo/2014/11/13/17/04/heart-529607_960_720.jpg";
+  `${WEDDING_INVITATION_URL}/static/media/ShareThumbnail.webp`;
 
 export const WEDDING_DATE = "2025년 04월 05일, 토요일 오후 2시";
 export const WEDDING_LOCATION = "까사그랑데 센트로, 6층 에떼르노홀";
