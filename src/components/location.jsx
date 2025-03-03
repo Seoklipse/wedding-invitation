@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { Divider } from "antd";
 import styled from "styled-components";
 import Flower from "../assets/flower2.png";
+import Reception from "../assets/CheorwonReception.webp"
 
 const Wrapper = styled.div`
   padding-top: 42px;
@@ -64,6 +65,11 @@ const SubwayLine = styled.span`
     line === "7호선" ? "#6D8EB5" : // 7호선 (올리브색)
     "black"};
 `;
+
+const CheorwonReception = styled.img`
+  width: 100%;
+  display: block;
+  `;
 
 const Location = () => {
   // 카카오 맵 불러오기
@@ -140,6 +146,7 @@ const Location = () => {
         <BusItem busType="공항">공항버스</BusItem> 6013<br />
         <BusItem busType="마을">마을버스</BusItem> 광진05
         <br />
+        <br />
         <Title>지하철 이용시</Title>
         <br />
         <br />
@@ -152,6 +159,12 @@ const Location = () => {
         네비게이션: "까사그랑데" 또는 "건대입구역 자이엘라" 입력
         <br />
         주소검색 : "서울 광진구 능동로 87" 또는 "서울 광진구 자양동 2-2" 검색
+        <br />
+        <br />
+        <Title>피로연 안내</Title>
+        <br />
+        <br />
+        <CheorwonReception src={Reception} alt="Cheorwon Reception"></CheorwonReception>
       </Content>
     </Wrapper>
   );
