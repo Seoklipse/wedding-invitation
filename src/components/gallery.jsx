@@ -30,6 +30,26 @@ import GalleryPhoto24 from "../assets/Gallery_Photo_24.webp";
 import GalleryPhoto25 from "../assets/Gallery_Photo_25.webp";
 import GalleryPhoto26 from "../assets/Gallery_Photo_26.webp";
 import GalleryPhoto27 from "../assets/Gallery_Photo_27.webp";
+import GalleryPhoto28 from "../assets/Gallery_Photo_28.webp";
+import GalleryPhoto29 from "../assets/Gallery_Photo_29.webp";
+import GalleryPhoto30 from "../assets/Gallery_Photo_30.webp";
+import GalleryPhoto31 from "../assets/Gallery_Photo_31.webp";
+import GalleryPhoto32 from "../assets/Gallery_Photo_32.webp";
+import GalleryPhoto33 from "../assets/Gallery_Photo_33.webp";
+import GalleryPhoto34 from "../assets/Gallery_Photo_34.webp";
+import GalleryPhoto35 from "../assets/Gallery_Photo_35.webp";
+import GalleryPhoto36 from "../assets/Gallery_Photo_36.webp";
+import GalleryPhoto37 from "../assets/Gallery_Photo_37.webp";
+import GalleryPhoto38 from "../assets/Gallery_Photo_38.webp";
+import GalleryPhoto39 from "../assets/Gallery_Photo_39.webp";
+import GalleryPhoto40 from "../assets/Gallery_Photo_40.webp";
+import GalleryPhoto41 from "../assets/Gallery_Photo_41.webp";
+import GalleryPhoto42 from "../assets/Gallery_Photo_42.webp";
+import GalleryPhoto43 from "../assets/Gallery_Photo_43.webp";
+import GalleryPhoto44 from "../assets/Gallery_Photo_44.webp";
+import GalleryPhoto45 from "../assets/Gallery_Photo_45.webp";
+import GalleryPhoto46 from "../assets/Gallery_Photo_46.webp";
+import GalleryPhoto47 from "../assets/Gallery_Photo_47.webp";
 
 const Wrapper = styled.div`
   padding-top: 42px;
@@ -154,6 +174,86 @@ const images = [
   {
     original: GalleryPhoto27,
     thumbnail: GalleryPhoto27,
+  },
+  {
+    original: GalleryPhoto28,
+    thumbnail: GalleryPhoto28,
+  },
+  {
+    original: GalleryPhoto29,
+    thumbnail: GalleryPhoto29,
+  },
+  {
+    original: GalleryPhoto30,
+    thumbnail: GalleryPhoto30,
+  },
+  {
+    original: GalleryPhoto31,
+    thumbnail: GalleryPhoto31,
+  },
+  {
+    original: GalleryPhoto32,
+    thumbnail: GalleryPhoto32,
+  },
+  {
+    original: GalleryPhoto33,
+    thumbnail: GalleryPhoto33,
+  },
+  {
+    original: GalleryPhoto34,
+    thumbnail: GalleryPhoto34,
+  },
+  {
+    original: GalleryPhoto35,
+    thumbnail: GalleryPhoto35,
+  },
+  {
+    original: GalleryPhoto36,
+    thumbnail: GalleryPhoto36,
+  },
+  {
+    original: GalleryPhoto37,
+    thumbnail: GalleryPhoto37,
+  },
+  {
+    original: GalleryPhoto38,
+    thumbnail: GalleryPhoto38,
+  },
+  {
+    original: GalleryPhoto39,
+    thumbnail: GalleryPhoto39,
+  },
+  {
+    original: GalleryPhoto40,
+    thumbnail: GalleryPhoto40,
+  },
+  {
+    original: GalleryPhoto41,
+    thumbnail: GalleryPhoto41,
+  },
+  {
+    original: GalleryPhoto42,
+    thumbnail: GalleryPhoto42,
+  },
+  {
+    original: GalleryPhoto43,
+    thumbnail: GalleryPhoto43,
+  },
+  {
+    original: GalleryPhoto44,
+    thumbnail: GalleryPhoto44,
+  },
+  {
+    original: GalleryPhoto45,
+    thumbnail: GalleryPhoto45,
+  },
+  {
+    original: GalleryPhoto46,
+    thumbnail: GalleryPhoto46,
+  },
+  {
+    original: GalleryPhoto47,
+    thumbnail: GalleryPhoto47,
   },
 ];
 

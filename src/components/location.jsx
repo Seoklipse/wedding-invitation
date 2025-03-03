@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import { Divider } from "antd";
 import styled from "styled-components";
 import Flower from "../assets/flower2.png";
-import Reception from "../assets/CheorwonReception.webp"
 
 const Wrapper = styled.div`
   padding-top: 42px;
@@ -66,11 +65,6 @@ const SubwayLine = styled.span`
     "black"};
 `;
 
-const CheorwonReception = styled.img`
-  width: 100%;
-  display: block;
-  `;
-
 const Location = () => {
   // 카카오 맵 불러오기
   const executeScript = () => {
@@ -132,7 +126,7 @@ const Location = () => {
       <Content>
         <b>서울특별시 광진구 능동로 87
         <br />
-        건대입구역 자이엘라 6F 에떼르노 홀</b>
+        건대입구역 자이엘라 6F 에떼르노홀</b>
         <br />
         <br />
         <Title>버스 이용시</Title>
@@ -156,15 +150,9 @@ const Location = () => {
         <Title>자가용 이용시</Title>
         <br />
         <br />
-        네비게이션: "까사그랑데" 또는 "건대입구역 자이엘라" 입력
+        네비게이션: <b>"까사그랑데"</b> 또는 <b>"건대입구역 자이엘라"</b> 입력
         <br />
         주소검색 : "서울 광진구 능동로 87" 또는 "서울 광진구 자양동 2-2" 검색
-        <br />
-        <br />
-        <Title>피로연 안내</Title>
-        <br />
-        <br />
-        <CheorwonReception src={Reception} alt="Cheorwon Reception"></CheorwonReception>
       </Content>
     </Wrapper>
   );

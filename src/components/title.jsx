@@ -59,9 +59,9 @@ const Title = () => {
           {GROOM_NAME} &#38; {BRIDE_NAME}
         </GroomBride>
         <Schedule>
-          {WEDDING_DATE}
+          <b>{WEDDING_DATE}
           <br />
-          {WEDDING_LOCATION}
+          {WEDDING_LOCATION}</b>
         </Schedule>
       </TitleWrapper>
       <BackgroundImg src={BackgroundImage} alt="Wedding Background"></BackgroundImg>
