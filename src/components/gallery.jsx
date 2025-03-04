@@ -74,7 +74,6 @@ import GalleryPhoto67 from "../assets/Gallery_Photo_67.webp";
 import GalleryPhoto68 from "../assets/Gallery_Photo_68.webp";
 import GalleryPhoto69 from "../assets/Gallery_Photo_69.webp";
 import GalleryPhoto70 from "../assets/Gallery_Photo_70.webp";
-import GalleryPhoto71 from "../assets/Gallery_Photo_71.webp";
 import GalleryPhoto72 from "../assets/Gallery_Photo_72.webp";
 import GalleryPhoto73 from "../assets/Gallery_Photo_73.webp";
 import GalleryPhoto74 from "../assets/Gallery_Photo_74.webp";
@@ -380,10 +379,6 @@ const images = [
   {
     original: GalleryPhoto70,
     thumbnail: GalleryPhoto70,
-  },
-  {
-    original: GalleryPhoto71,
-    thumbnail: GalleryPhoto71,
   },
   {
     original: GalleryPhoto72,
