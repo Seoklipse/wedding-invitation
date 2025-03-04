@@ -6,7 +6,7 @@ import {
   GROOM_NAME,
   BRIDE_NAME,
 } from "../../config.js";
-import BackgroundImage from "static/BackgroundImage.webp";
+import BackgroundImage from "../assets/BackgroundImage.webp";
 import GroovePaper from "../assets/GroovePaper.png";
 
 const Layout = styled.div`
