@@ -23,6 +23,7 @@ import GalleryPhoto16 from "../assets/Gallery_Photo_16.webp";
 import GalleryPhoto17 from "../assets/Gallery_Photo_17.webp";
 import GalleryPhoto18 from "../assets/Gallery_Photo_18.webp";
 import GalleryPhoto19 from "../assets/Gallery_Photo_19.webp";
+import GalleryPhoto19a from "../assets/Gallery_Photo_19-1.webp";
 import GalleryPhoto20 from "../assets/Gallery_Photo_20.webp";
 import GalleryPhoto21 from "../assets/Gallery_Photo_21.webp";
 import GalleryPhoto22 from "../assets/Gallery_Photo_22.webp";
@@ -175,6 +176,10 @@ const images = [
   {
     original: GalleryPhoto19,
     thumbnail: GalleryPhoto19,
+  },
+  {
+    original: GalleryPhoto19a,
+    thumbnail: GalleryPhoto19a,
   },
   {
     original: GalleryPhoto20,

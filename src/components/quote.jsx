@@ -33,7 +33,7 @@ const Image = styled.img`
   width: 1.375rem;
   padding-bottom: 42px;
 `;
-
+/*
 const Quote = () => {
   return (
     <Wrapper>
@@ -55,5 +55,6 @@ const Quote = () => {
     </Wrapper>
   );
 };
+*/
 
 export default Quote;
