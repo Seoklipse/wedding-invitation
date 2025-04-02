@@ -33,10 +33,10 @@ const Image = styled.img`
   width: 1.375rem;
   padding-bottom: 42px;
 `;
-/*
+
 const Quote = () => {
   return (
-    <Wrapper>
+    <Wrapper>/*
       <Image src={Flower} data-aos="fade-up" />
       <Content data-aos="fade-up">
         <b>신랑측 피로연 안내</b>
@@ -51,10 +51,10 @@ const Quote = () => {
         <br />
         장소 : 강원 철원군 서면 와수로110번안길 18-2 태봉웨딩홀
         <br />
-      </Content>
+      </Content>*/
     </Wrapper>
   );
 };
-*/
+
 
 export default Quote;
