@@ -4,6 +4,7 @@ import QuotePaper from "../assets/Quote.png";
 import Flower from "../assets/flower1.png";
 
 const Wrapper = styled.div`
+  display: none;
   padding-top: 42px;
   padding-left: 42px;
   padding-right: 42px;
@@ -36,7 +37,7 @@ const Image = styled.img`
 
 const Quote = () => {
   return (
-    <Wrapper>/*
+    <Wrapper>
       <Image src={Flower} data-aos="fade-up" />
       <Content data-aos="fade-up">
         <b>신랑측 피로연 안내</b>
@@ -51,7 +52,7 @@ const Quote = () => {
         <br />
         장소 : 강원 철원군 서면 와수로110번안길 18-2 태봉웨딩홀
         <br />
-      </Content>*/
+      </Content>
     </Wrapper>
   );
 };
